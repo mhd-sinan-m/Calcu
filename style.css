@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    width:100%;
+    height: 100%;
+    background: black;
+    margin: auto;
+}
+@font-face {
+    font-family: Ds-Digital;
+    src: url(ds-digit.ttf);
+    }
+h1{margin-top: 7px;font-family:'DS-Digital',sans-serif;}
+  
+*{
+    font-family:'roboto',sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-justify: inherit;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+.container{
+    width: 230px;
+    height: 400px; 
+    margin: auto;
+    margin-top: 80px;
+    padding: 12px;
+    border: 2px solid #a0a19d;
+}
+#input{
+    width: 87%;
+    border: 2px solid #f49905;
+    border-color: #fcc26677;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow:auto;
+}
+#input>*{
+    font-family:'roboto',sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-justify: inherit;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    justify-content: center;
+}
+.round{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #313131;
+    border: 0px solid;
+}
+.gray{
+    background: #a0a19d;
+    color: #313131;
+}
+.orng{
+    background: #f49905;
+}
+.bulb{
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    animation: swing 9s infinite alternate;
+    transform-origin: center -20px;
+}
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(30deg); } 
+    40% { transform: rotate(-30deg); } 
+    60% { transform: rotate(17deg); } 
+    80% { transform: rotate(-17deg); } 
+    100% { transform: rotate(0deg); }
+}
+
+.fa-calculator{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    font-size: 80px;
+    color: #f49905;
+    
+}

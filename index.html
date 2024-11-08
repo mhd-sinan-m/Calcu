@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="script.js"></script>
+    <style>
+   
+    </style>
+    <title> Calculator</title>
+</head>
+<body>
+<img src="swing.png" alt="bulb" class="bulb">
+<div class="container">
+  <div><h1>CALCULATOR</h1></div>
+  <div type="text" name="NUMBER" id="input"></div>
+  <div class="main">
+    <button class="round gray" onclick="document.getElementById('input').innerHTML = val = val.substring(0, val.length - 1);" value="NaN">C</button>
+    <button class="round gray" onclick="document.getElementById('input').innerHTML = val= '';" value="">AC</button>
+    <button class="round gray" onclick="anas('%')">%</button>
+    <button class="round orng" onclick="anas('/')"><i class="fa-solid fa-divide"></i></button>
+    <button class="round" onclick="anas('7')" >7</button>
+    <button class="round" onclick="anas('8')">8</button>
+    <button class="round" onclick="anas('9')" >9</button>
+    <button class="round orng" onclick="anas('*')"><i class="fa-solid fa-xmark"></i></button>
+    <button class="round" onclick="anas('4')" >4</button>
+    <button class="round" onclick="anas('5')" >5</button>
+    <button class="round" onclick="anas('6')" >6</button>
+    <button class="round orng" onclick="anas('-')" ><i class="fa-solid fa-minus"></i></button>
+    <button class="round" onclick="anas('1')" >1</button>
+    <button class="round" onclick="anas('2')" >2</button>
+    <button class="round" onclick="anas('3')" >3</button>
+    <button class="round orng" onclick="anas('+')" ><i class="fa-solid fa-plus"></i></button>
+    <button class="round wide" onclick="result()" style="grid-column:1/3;width: 100px;border-radius: 15px;" ><i class="fa-solid fa-equals"></i></button>
+    <button class="round" onclick="anas('.')" >.</button>
+    <button class="round orng" onclick="anas('0')">0</button>
+  </div>
+</div>
+<i class="fa-solid fa-calculator fa-bounce"></i>
+<div style="background: #f49905;position: fixed;bottom: 0px; height:9px;width: 100%;"></div>
+
+<div style="background: #f49905;position: fixed;top: 0px; height: 9px;width: 100%;"></div>
+</body>
+</html>
